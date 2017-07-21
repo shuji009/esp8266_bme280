@@ -97,7 +97,10 @@ void loop() {
   const int httpPort = 80;
   if (!client.connect(host,httpPort)){
     Serial.println("connection failed");
-    return;
+    ///return;  <---bug
+    delay(100);  //
+    pinMode(16, OUTPUT);  ///
+    digitalWrite(16, LOW); /// reset
   }
    
   String url = "/update?key=";
