@@ -2,7 +2,7 @@
 ////C:\Users\Shuji\Documents\Arduino\weatherreffer
 #include <ESP8266WiFi.h>
 #include <Wire.h>
-#include <SPI.h>
+///#include <SPI.h>
 
 ///https://github.com/embeddedadventures/BME280
 #include <BME280_MOD-1022.h>
