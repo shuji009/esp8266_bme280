@@ -59,7 +59,7 @@ void loop() {
   String humi = String(hmd);    // Humidity
   String pres = String(prs);    // Pressure
 
-  if(tmp>60.0 || hmd > 99.9 || hmd == 0 || prs>1190.0 || prs < 750.0) { ///異常値オミット
+  if(tmp>60.0 || hmd > 100.0 || hmd == 0 || prs>1190.0 || prs < 750.0) { ///異常値オミット
     String mg = "";
     mg += thingspeak_key;                         // thingspeak Write KEY
     mg += " temp =";mg += temp;                 // Temp
