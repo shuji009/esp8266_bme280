@@ -14,3 +14,6 @@ https://thingspeak.com/channels/281837
 現バージョンは、問題の多かったWiFi接続回数をthingspeakにあげている(公開はしていない)。
 また、WiFi接続も、#define NETNG_COUNT 50　で現在は50回までリトライをし、それを超えれば、10分間のdeepsleepさせている。
 
+2017年12月23日
+電源をCR123Aから、単3サイズのeneloop lite x 3本＋太陽電池をレギュレータADP3338で3V3で使用するよう変更した。
+電源観察は、ADP3338のin側をESP8266のA/Dコンバーターに入れて測定している。
